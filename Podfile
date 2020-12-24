@@ -5,6 +5,7 @@ target 'M1MacSpeedTest' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for M1MacSpeedTest
+  pod 'RxSwift', '6.0.0-rc.2'
+  pod 'RxCocoa', '6.0.0-rc.2'
 
 end

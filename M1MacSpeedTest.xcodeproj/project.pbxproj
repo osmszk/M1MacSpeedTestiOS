@@ -13,9 +13,11 @@
 		C7019270259554ED00932BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C701926E259554ED00932BD1 /* Main.storyboard */; };
 		C7019272259554EE00932BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7019271259554EE00932BD1 /* Assets.xcassets */; };
 		C7019275259554EE00932BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7019273259554EE00932BD1 /* LaunchScreen.storyboard */; };
+		E05614A6BFC2023044AE3283 /* Pods_M1MacSpeedTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EFA96F3EC3D3D5D7854498 /* Pods_M1MacSpeedTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25EFA96F3EC3D3D5D7854498 /* Pods_M1MacSpeedTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M1MacSpeedTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7019265259554ED00932BD1 /* M1MacSpeedTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M1MacSpeedTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7019268259554ED00932BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C701926A259554ED00932BD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		C7019271259554EE00932BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7019274259554EE00932BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7019276259554EE00932BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E862655F103AF2C7881EBCC1 /* Pods-M1MacSpeedTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M1MacSpeedTest.release.xcconfig"; path = "Target Support Files/Pods-M1MacSpeedTest/Pods-M1MacSpeedTest.release.xcconfig"; sourceTree = "<group>"; };
+		FBC71A4B1A40263DAE6BDE61 /* Pods-M1MacSpeedTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M1MacSpeedTest.debug.xcconfig"; path = "Target Support Files/Pods-M1MacSpeedTest/Pods-M1MacSpeedTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05614A6BFC2023044AE3283 /* Pods_M1MacSpeedTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3317336082A8556CA74B89B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25EFA96F3EC3D3D5D7854498 /* Pods_M1MacSpeedTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BB0FA3BFC4696124E6886C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBC71A4B1A40263DAE6BDE61 /* Pods-M1MacSpeedTest.debug.xcconfig */,
+				E862655F103AF2C7881EBCC1 /* Pods-M1MacSpeedTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C701925C259554ED00932BD1 = {
 			isa = PBXGroup;
 			children = (
 				C7019267259554ED00932BD1 /* M1MacSpeedTest */,
 				C7019266259554ED00932BD1 /* Products */,
+				5BB0FA3BFC4696124E6886C6 /* Pods */,
+				3317336082A8556CA74B89B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7019279259554EE00932BD1 /* Build configuration list for PBXNativeTarget "M1MacSpeedTest" */;
 			buildPhases = (
+				A592CF674DFC317604F3886B /* [CP] Check Pods Manifest.lock */,
 				C7019261259554ED00932BD1 /* Sources */,
 				C7019262259554ED00932BD1 /* Frameworks */,
 				C7019263259554ED00932BD1 /* Resources */,
+				89056D7A62F5BC008ADFBF2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89056D7A62F5BC008ADFBF2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-M1MacSpeedTest/Pods-M1MacSpeedTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-M1MacSpeedTest/Pods-M1MacSpeedTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-M1MacSpeedTest/Pods-M1MacSpeedTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A592CF674DFC317604F3886B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-M1MacSpeedTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7019261259554ED00932BD1 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		C701927A259554EE00932BD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC71A4B1A40263DAE6BDE61 /* Pods-M1MacSpeedTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		C701927B259554EE00932BD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E862655F103AF2C7881EBCC1 /* Pods-M1MacSpeedTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
