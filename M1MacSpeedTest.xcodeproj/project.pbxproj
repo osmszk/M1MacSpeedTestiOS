@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,7 +56,6 @@
 				FBC71A4B1A40263DAE6BDE61 /* Pods-M1MacSpeedTest.debug.xcconfig */,
 				E862655F103AF2C7881EBCC1 /* Pods-M1MacSpeedTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
