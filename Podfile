@@ -8,5 +8,8 @@ target 'M1MacSpeedTest' do
   pod 'RxSwift', '~> 5.0'
   pod 'RxCocoa', '~> 5.0'
   pod 'Moya/RxSwift', '~> 14.0'
+  pod 'RealmSwift'
+  pod 'Material', '~> 3.1.0'
+  pod 'lottie-ios'
 
 end
