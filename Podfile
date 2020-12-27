@@ -11,5 +11,8 @@ target 'M1MacSpeedTest' do
   pod 'RealmSwift'
   pod 'Material', '~> 3.1.0'
   pod 'lottie-ios'
+  pod 'SwiftLint'
+  pod 'R.swift'
+  pod 'Firebase/Analytics'
 
 end
