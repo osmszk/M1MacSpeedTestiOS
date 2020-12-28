@@ -13,6 +13,6 @@ target 'M1MacSpeedTest' do
   pod 'lottie-ios'
   pod 'SwiftLint'
   pod 'R.swift'
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Analytics', '7.2-M1'
 
 end
